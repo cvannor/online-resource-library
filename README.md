@@ -1,5 +1,5 @@
 # online-resource-library
-An online library containing notes, homework, test questions and more for college students. View it here: http://nsbe.bossantiques.com/
+An online library containing notes, homework, test questions and more for college students. 
 
 ## Description
 This project was built on top of the wordpress file strucure and is using wordpress's database to store file information
