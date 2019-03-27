@@ -15,10 +15,6 @@ This simple application does the following:
 - [Search functionality](page-csearch.php)
 - [File download functionality](page-csearch.php)
 
-### ToDo(Features):
-- Get filters working
-- Get ajax featurs working
-  - upload progress bar
-View the project here: http://nsbe.bossantiques.com/
+
 
 
