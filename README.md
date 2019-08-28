@@ -19,6 +19,7 @@ This simple application does the following:
 - Get filters working
 - Get ajax featurs working
   - upload progress bar
+  
 View the project here: http://nsbe.bossantiques.com/
 
 

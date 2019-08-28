@@ -57,30 +57,8 @@ function get_type(){
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-            <section class="jbtrn jumbotron text-center">
-                <div class="container">
-                    <h1 class="jumbotron-heading"><?php the_title( '<h1 class="entry-title">', '</h1>' ); ?></h1>
-                    <p class="lead">Here you can find notes, reports and essays from previous semesters. Search for what you need or filter by department, course, and type.</p>
-    
-                </div>
-            </section>
-            <div class="search-section">
-                    <form method="POST" class="search-form"   action="http://nsbe.bossantiques.com/csearch/">
- 
-                        <div class="input-group">
-	
-                            <input type="text" class="searchbox form-control" placeholder="What are you looking for?"  name="search" required/>
-  
-                            <div class="input-group-btn">
-
-                                <button type="submit" name="search-submit" class="sbutton btn btn-default"><i class="fas fa-search"></i></button>
-                            </div>
- 
-                        </div>
-
-                    </form>
-      
-                </div>
+            
+            
             <div class="container-fluid">
                 <div class="row">
                     <button type="button" class="btntoggle btn btn-block btn-outline-secondary d-md-none" data-toggle="toggle" data-target="#search-filters">Toggle filters</button>

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The main template file
  *
@@ -21,48 +22,207 @@ $title = $queried_post->post_title;
 $content = $queried_post->post_content;
 ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-             <!--<h9 class="big-text">We want to help you reach the finish line.</h9>
+<div id="primary" class="content-area">
+    <main id="main" style="background-color: #d7e8f7 !important;" class="site-main">
+        <!--<h9 class="big-text">We want to help you reach the finish line.</h9>
                 <div class="dark-screen">
                     <div class="banner-art">
                     </div>
                 </div>-->
-            <section class="jumbotron text-center index-jumbo">
-                <div class="container">
-                    <h1 class="jumbotron-heading"><?php echo $title ?></h1>
-                    <hr class="featurette-divider">
-                    <p class="lead text-muted"><?php echo $content ?></p>
+        <section class="index-jumbo">
+            <div class="container">
+                <h1 class="jumbotron-heading">Online Resource Library</h1>
+                <p class="lead">Access high quality study materials to get better grades</p>
+                <div class="row">
+                    <div class="col-md-9">
+                        <form method="POST" class="searchform" action="http://nsbe.bossantiques.com/csearch/">
+                            <div class="input-group">
+                                <input type="text" class="searchbox form-control" placeholder="What are you looking for?" name="search" required />
+                                <div class="input-group-btn">
+                                    <button type="submit" name="search-submit" class="sbutton btn btn-default"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-md-3">
+                    </div>
                 </div>
-            </section>
-            <div class="container-fluid">
-                
-                <div class="row marketing">
-                    <div class="col-lg-6">
-                        <img class="rounded-circle" src="http://nsbe.bossantiques.com/wp-content/uploads/sites/3/2018/12/iconfinder_icon-61_667366.png" alt="Resourses image" width="140" height="140">
-                        <h2>Download Resources</h2>
-                        <p>Download notes, homework, tests, reports and more to help with your courses</p>
-                        <p><a class="btn btn-secondary" href="http://nsbe.bossantiques.com/find-resources/" role="button">Download Resource &raquo;</a></p>
-                    </div>
-                    <div class="col-lg-6">
-                        <img class="rounded-circle" src="http://nsbe.bossantiques.com/wp-content/uploads/sites/3/2019/01/download.png" alt="Mentorship image" width="140" height="140">
-                        <h2>Upload Resources</h2>
-                        <p>Upload materials that you have from your previouse courses and help other succeed.</p>
-                        <p><a class="btn btn-secondary" href="http://nsbe.bossantiques.com/upload-resources/" role="button">Upload Resources &raquo;</a></p>
-                    </div>
+            </div>
+        </section>
+        <div class="resource-options">
+            <div class="resource-card">
+                <img style="padding-top:15px" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/Group-1.png" alt="Get better grades image" width="140" height="140">
+                <h4 style="margin-bottom:28px">Get Better Grades</h4>
+                <p>Find high quality study materials to help you pass your tests!</p>
+            </div>
+            <div class="resource-card middle-card">
+                <img style="padding-top: 2px;" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/piggy-bank.png" alt="Save Money image" width="140" height="140">
+                <h4>Save Money</h4>
+                <p>Save money on extra study materials and use this open source library for what you need!</p>
+            </div>
+            <div class="resource-card">
+                <img style="padding-top:30px;" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/charity.png" alt="Contribute image" width="140" height="140">
+                <h4>Make a contribution</h4>
+                <p>Contribute to the success of others and add some of your class materials!</p>
+            </div>
+
+        </div>
+        <div class="container">
+            <div class="row courses-departments">
+                <div class="col-md-6">
+                    <h2>Find your department:</h2>
+                    <p>Get resources for the major you're studying.</p>
+                    <ul>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                    </ul>
 
                 </div>
-            
-                <!--<div class="row featurette feat-one">
+                <div class="col-md-6">
+                    <h2>Find your course:</h2>
+                    <p>Find stuff for a particular course.</p>
+                    <ul>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                        <li>Blah</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <!--<div class="container">
+            <div class="row resource-options">
+                <div class="col-md-3">
+                    <h2>What are you looking for?</h2>
+                    <p>Search based on the type of resource you need.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="resource-card">
+                        <img class="rounded-circle" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/iconfinder_icon-61_667366-300x300.png" alt="Resourses image" width="140" height="140">
+                        <h2>Download Resources</h2>
+                        <p>Download notes, homework, tests, reports and more to help with your courses</p>
+                        <p><a class="btn btn-secondary" href="http://onlineresourcelibrary.curtisvannor.com/index.php/find-resources/" role="button">Download Resource &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="resource-card">
+                        <img class="rounded-circle" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/iconfinder_icon-61_667366-300x300.png" alt="Resourses image" width="140" height="140">
+                        <h2>Download Resources</h2>
+                        <p>Download notes, homework, tests, reports and more to help with your courses</p>
+                        <p><a class="btn btn-secondary" href="http://onlineresourcelibrary.curtisvannor.com/index.php/find-resources/" role="button">Download Resource &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="resource-card">
+                        <img class="rounded-circle" src="http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/iconfinder_icon-61_667366-300x300.png" alt="Resourses image" width="140" height="140">
+                        <h2>Download Resources</h2>
+                        <p>Download notes, homework, tests, reports and more to help with your courses</p>
+                        <p><a class="btn btn-secondary" href="http://onlineresourcelibrary.curtisvannor.com/index.php/find-resources/" role="button">Download Resource &raquo;</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row featurette feat-one">
                     <?php
                     $args1 = array(
-                        'orderby' =>'date',
+                        'orderby' => 'date',
                         'posts_per_page' => 3,
                         'order' => 'DESC',
-                        'category_name'=>'upcoming-events'
+                        'category_name' => 'upcoming-events'
                     );
-                    $loop = new WP_Query( $args1 );
-                    while ( $loop->have_posts() ) : $loop->the_post();?>
+                    $loop = new WP_Query($args1);
+                    while ($loop->have_posts()) : $loop->the_post(); ?>
                     <?php endwhile; ?>
                     
                     <div class="col-md-7">
@@ -72,22 +232,22 @@ $content = $queried_post->post_content;
                         <p class="lead"> <?php the_excerpt(); ?></p>
                     </div>
                     <div class="col-md-5">
-                        <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID); ?>
+                        <?php if (has_post_thumbnail($loop->post->ID)) echo get_the_post_thumbnail($loop->post->ID); ?>
                     </div>
                     <?php wp_reset_query(); ?>
                 </div>-->
 
 
-                <!--<div class="row featurette feat-two">
+        <!--<div class="row featurette feat-two">
                     <?php
                     $args1 = array(
-                        'orderby' =>'date',
+                        'orderby' => 'date',
                         'posts_per_page' => 3,
                         'order' => 'DESC',
-                        'category_name'=>'recent-events'
+                        'category_name' => 'recent-events'
                     );
-                    $loop = new WP_Query( $args1 );
-                    while ( $loop->have_posts() ) : $loop->the_post();?>
+                    $loop = new WP_Query($args1);
+                    while ($loop->have_posts()) : $loop->the_post(); ?>
                     <?php endwhile; ?>
                     
                     <div class="col-md-7 order-md-2">
@@ -97,15 +257,15 @@ $content = $queried_post->post_content;
                         <p class="lead"> <?php the_excerpt(); ?></p> 
                     </div>
                     <div class="col-md-5 order-md-1">
-                        <?php if (has_post_thumbnail( $loop->post->ID )) echo get_the_post_thumbnail($loop->post->ID); ?>
+                        <?php if (has_post_thumbnail($loop->post->ID)) echo get_the_post_thumbnail($loop->post->ID); ?>
                     </div>
                     <?php wp_reset_query(); ?>
                 </div>-->
-            </div>
-            
-                      
-		</main><!-- #main -->
-	</div><!-- #primary -->
+</div>
+
+
+</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_sidebar();
