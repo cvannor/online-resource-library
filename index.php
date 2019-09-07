@@ -35,14 +35,7 @@ $content = $queried_post->post_content;
                 <p class="lead">Access high quality study materials to get better grades</p>
                 <div class="row">
                     <div class="col-md-9">
-                        <form method="POST" class="searchform" action="http://nsbe.bossantiques.com/csearch/">
-                            <div class="input-group">
-                                <input type="text" class="searchbox form-control" placeholder="What are you looking for?" name="search" required />
-                                <div class="input-group-btn">
-                                    <button type="submit" name="search-submit" class="sbutton btn btn-default"><i class="fas fa-search"></i></button>
-                                </div>
-                            </div>
-                        </form>
+                        <a class="view-resources-btn" href="http://onlineresourcelibrary.curtisvannor.com/find-resources/">Click Here To Find Resources!</a>
 
                     </div>
                     <div class="col-md-3">
@@ -74,53 +67,19 @@ $content = $queried_post->post_content;
                     <h2>Find your department:</h2>
                     <p>Get resources for the major you're studying.</p>
                     <ul>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
+                        <?php
+                        $major_list = get_majors();
+                        foreach ($major_list as $one) {
+                            $major = $one;
+                            ?>
+                            <li>
+                                <button class="majors-btn" name="<?php echo $major?>" style="padding: 0;background-color: transparent;border: 0px;"><?php echo $major ?></button>
+
+                            </li>
+
+                        <?php
+                        }
+                        ?>
                     </ul>
 
                 </div>
@@ -128,53 +87,20 @@ $content = $queried_post->post_content;
                     <h2>Find your course:</h2>
                     <p>Find stuff for a particular course.</p>
                     <ul>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
-                        <li>Blah</li>
+                        <?php
+                        $course_list = get_courses();
+                        foreach ($course_list as $this) {
+                            $code = $this['course_code'];
+                            $title = $this['course_title'];
+                            ?>
+                            <li><button class="courses-btn" style="padding: 0;background-color: transparent;border: 0px;" name="<?php echo $title?>"><?php echo '' . $code . '-' . $title . '' ?></button>
+                            </li>
+
+
+                        <?php
+                        }
+                        ?>
+
                     </ul>
 
                 </div>

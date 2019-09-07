@@ -83,8 +83,8 @@
                         <h4><?php echo ''.$ctitle.'-'.$ccode.'' ?></h4>
                         <h5><?php echo $sub ?></h5>
                         <h6><?php echo $t ?></h6>
-                        <p>Date added: <?php echo ''.$date.' on '.$time.'' ?></p>
-                        <a href="http://nsbe.bossantiques.com/download/?id=<?= $id ?>" class="btn btn-primary">Download</a>
+                        <p>Date added: <?php echo ''.$date.'' ?></p>
+                        <a href="http://onlineresourcelibrary.curtisvannor.com/download/?id=<?= $id ?>" class="btn btn-primary">Download</a>
                     </div>
                     
    

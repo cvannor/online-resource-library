@@ -415,6 +415,25 @@ dfn, cite, em, i {
 	font-style: italic;
 }
 
+.filters .dropdown{
+    margin-bottom: 10px;
+}
+
+.dropdown input{
+    float: left;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.dropdown label{
+    border: none;
+    display: inline-block
+}
+
+.dropdown p{
+    display: inline-block;
+}
+
 blockquote {
 	margin: 0 1.5em;
 }
@@ -536,10 +555,9 @@ input[type="submit"] {
 	border-radius: 3px;
 	background: #e6e6e6;
 	color: rgba(0, 0, 0, 0.8);
-	font-size: 12px;
-	font-size: 0.75rem;
+	font-size: 16px;
 	line-height: 1;
-	padding: .6em 1em .4em;
+	padding: 10px;
 }
 
 button:hover,
@@ -575,10 +593,10 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	color: #666;
+	/*color: #666;
 	border: 2px solid #9e9e9e;
 	border-radius: 3px;
-	padding: 3px;
+	padding: 3px;*/
 }
 
 input[type="text"]:focus,
@@ -614,18 +632,6 @@ textarea {
 /*--------------------------------------------------------------
 ## Links
 --------------------------------------------------------------*/
-a {
-	color: royalblue;
-}
-
-a:visited {
-	color: purple;
-}
-
-a:hover, a:focus, a:active {
-	color: midnightblue;
-}
-
 a:focus {
 	outline: thin dotted;
 }
@@ -1164,10 +1170,7 @@ object {
    
 }
 
-.upload-page{
-    background: silver;
 
-}
 
 .about-us-title {
     padding-top: 30px;
@@ -1294,7 +1297,17 @@ object {
 }
 #colophon {
     overflow: hidden;
+    position: static;
+    bottom: 0;
+    width: 100%;
 }
+
+.fr-primary{
+    margin-top: 180px;
+}
+
+
+
 .site-info p{
     padding: 0px;
     margin: 0px;
@@ -1330,6 +1343,13 @@ object {
         top: 140px;
     }
 }
+
+@media screen and (max-width:620px){
+    .fr-primary{
+        margin-top: 230px;
+    }
+}
+
 @media screen and (max-width:768px){
     .big-text{
         font-size: 40px;
@@ -1372,8 +1392,6 @@ object {
     width: 80%;
 }
 
-.search-form {
-}
 
 .searchform{
     width: 100%;
@@ -1417,14 +1435,30 @@ object {
 .topborder {
     height: 20px;
 }
-
-.filters {
-    display: inline-block;
-    background: lightgray;
+.reset-btn{
+    background-color: transparent;
+    border-color: transparent;
 }
+.filters {
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    display: inline-block;
+}
+
+.filters::-webkit-scrollbar{
+    width: 5px;
+}
+.filters::-webkit-scrollbar-thumb{
+    background: gray;
+    border-radius: 6px;
+    height: 30px;
+}
+
 
 .filters div{
     display: inline-block;
+    margin: 0 8px;
 }
 
 .maincontent p{
@@ -1641,6 +1675,19 @@ td input{
     box-shadow: 10px 10px 19px -13px rgba(0,0,0,0.75);
 }
 
+#maincontent .card{
+    background-color: #c4e8ff;
+    display: inline-block;
+    height: 210px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -10px rgba(0,0,0,0.75);
+
+}
+
 .courses-departments li:hover{
     background-color: #59beff;
     color: white;
@@ -1651,7 +1698,7 @@ td input{
     color: white;
     margin-bottom: 0 !important;
     padding: 150px 0 !important;
-    background: url(http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/08/aleksi-tappura-370-unsplash.png);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(http://onlineresourcelibrary.curtisvannor.com/wp-content/uploads/2019/09/aleksi-tappura-PjH_BkzjxTA-unsplash.jpg);
     background-repeat: no-repeat;
     /*background-size: contain;*/
     background-position: center;
@@ -1661,11 +1708,23 @@ td input{
     width: 100%;
     height: 450px;
 }
+
+.index-jumbo p{
+    margin-bottom: 30px;
+}
 .table th, .table td {
     border-top: none !important;
 }
 .upload-cont {
     padding-bottom: 50px !important;
+}
+
+.h-resources{
+    margin-bottom: 60px;
+}
+
+.upload-page{
+    margin-top: 90px;
 }
 
 .results-container {
@@ -1707,15 +1766,21 @@ td input{
     }
 }
 
+.view-resources-btn{
+    font-weight: 700;
+    /* border: 2px solid white; */
+    font-size: 16px;
+    background-color: #59beff;
+    color: #ffffff;
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+
 @media screen and (max-width: 450px){
     .resource-card{
         width: 90%;
         display: block;
         margin: 0 auto 20px auto;
-    }
-
-    .courses-departments ul{
-        text-align: center;
     }
 
     .index-jumbo{
